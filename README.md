@@ -11,6 +11,12 @@
 ### 初始化仓库
 [添加 WZRY 子模块](how_to_use_submodule.md)
 
+
+### clone仓库
+```
+git clone --recurse-submodules  git@github.com:cndaqiang/AutoWZRY.git
+```
+
 ### 更新代码
 ```
 bash pull.sub.sh
