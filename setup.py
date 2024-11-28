@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='AutoWZRY',
-    version='2.2.9b1',
+    version='2.2.9b2',
     author='cndaqiang',
     author_email='who@cndaqiang.ac.cn',
     description='王者荣耀自动化农活脚本。',
@@ -13,6 +13,8 @@ setup(
     package_data={             # 指定需要包含的额外文件
         'AutoWZRY': [
             'assets/*',         # 包括 AutoWZRY/assets 下的所有文件
+            'README.md',         # 包括 AutoWZRY/assets 下的所有文件
+            'LICENSE',         # 包括 AutoWZRY/assets 下的所有文件
         ],
     },
     include_package_data=True,  # 自动包含 package_data 中指定的文件
