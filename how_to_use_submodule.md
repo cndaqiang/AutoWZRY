@@ -5,6 +5,9 @@
 git init
 git add .gitignore README.md
 git commit -m "init"
+#
+git add setup.py pypi.bat how_to_use_submodule.md build.ps1
+git commit -m "public file"
 ```
 
 ## 添加子模块
