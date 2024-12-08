@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='AutoWZRY',
-    version='2.2.9b2',
+    version='2.2.9b6',
     author='cndaqiang',
     author_email='who@cndaqiang.ac.cn',
     description='王者荣耀自动化农活脚本。',
@@ -20,8 +20,15 @@ setup(
     include_package_data=True,  # 自动包含 package_data 中指定的文件
     url='https://github.com/cndaqiang/WZRY',
     install_requires=[
-        'airtest-mobileauto>=2.0.12',
+        'airtest-mobileauto>=2.1.0',
     ],
+    entry_points={
+        'console_scripts': [
+            'autowzyd=AutoWZRY.wzyd:main',  # 直接引用脚本文件
+            'autowzry=AutoWZRY.wzry:main',  # 直接引用脚本文件
+            'autotiyanfu=AutoWZRY.tiyanfu:main',  # 直接引用脚本文件
+        ],
+    },
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
