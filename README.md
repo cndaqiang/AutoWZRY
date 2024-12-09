@@ -1,11 +1,10 @@
 # AutoWZRY
 
-* 此项目用于将 WZRY 子模块发布到 AutoWZRY@PyPI。
+* 此项目用于将 [WZRY](https://github.com/cndaqiang/WZRY) 子模块发布到 [AutoWZRY@PyPI](https://pypi.org/project/AutoWZRY/)。
 
-* 仅用于镜像WZRY的代码, 用于在无法访问github的情况下获取WZRY代码.
+* 用于在无法访问github的情况下获取[WZRY](https://github.com/cndaqiang/WZRY)代码. 即 `pip download AutoWZRY --no-deps`
 
-## 没有发布独立PyPI模块的计划
-* 一堆要改的, 太麻烦了
+* 当然也可以直接运行`autowzry.exe config.win.yaml`, 更多见[进阶教程](https://wzry-doc.pages.dev/guide/autowzry/)
 
 ## 构建发布过程
 ### 初始化仓库
