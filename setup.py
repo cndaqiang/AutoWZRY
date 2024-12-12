@@ -2,7 +2,14 @@ from setuptools import setup, find_packages
 
 setup(
     name='AutoWZRY',
-    version='2.2.9b6',
+    version='2.3.0.a1',
+    # 版本号后缀说明：
+    # - a1：早期测试版（Alpha 版本）
+    # - b1：功能较完整但可能有问题的测试版（Beta 版本）
+    # - rc1：接近最终稳定版的发布候选版本（Release Candidate）
+    # - dev1：开发中版本（未完成，内部测试）
+    # - post1：正式版发布后的补丁版本
+    # 示例：'2.3.0a1' 表示 2.3.0 的第 1 个 Alpha 测试版
     author='cndaqiang',
     author_email='who@cndaqiang.ac.cn',
     description='王者荣耀自动化农活脚本。',
