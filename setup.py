@@ -20,7 +20,7 @@ setup(
     include_package_data=True,  # 自动包含 package_data 中指定的文件
     url='https://github.com/cndaqiang/WZRY',
     install_requires=[
-        'airtest-mobileauto>=2.1.0',
+        'airtest-mobileauto>=2.1.2',
     ],
     entry_points={
         'console_scripts': [
