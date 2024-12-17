@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='AutoWZRY',
-    version='2.3.0.a1',
+    name='autowzry',
+    version='2.3.0.a6',
     # 版本号后缀说明：
     # - a1：早期测试版（Alpha 版本）
     # - b1：功能较完整但可能有问题的测试版（Beta 版本）
@@ -12,28 +12,28 @@ setup(
     # 示例：'2.3.0a1' 表示 2.3.0 的第 1 个 Alpha 测试版
     author='cndaqiang',
     author_email='who@cndaqiang.ac.cn',
-    description='王者荣耀自动化农活脚本。',
-    long_description=open('AutoWZRY/README.md', encoding='utf-8').read(),  # 从 AutoWZRY/README.md 读取 long description
+    description='王者荣耀·自动化农活脚本',
+    long_description=open('autowzry/README.md', encoding='utf-8').read(),  # 从 autowzry/README.md 读取 long description
     long_description_content_type='text/markdown',
     packages=find_packages(),  # 自动查找所有子包
     # 需要在AutoWZRY下面创建__init__.[y]
     package_data={             # 指定需要包含的额外文件
-        'AutoWZRY': [
-            'assets/*',         # 包括 AutoWZRY/assets 下的所有文件
-            'README.md',         # 包括 AutoWZRY/assets 下的所有文件
-            'LICENSE',         # 包括 AutoWZRY/assets 下的所有文件
+        'autowzry': [
+            'assets/*',         # 包括 autowzry/assets 下的所有文件
+            'README.md',         # 包括 autowzry/assets 下的所有文件
+            'LICENSE',         # 包括 autowzry/assets 下的所有文件
         ],
     },
     include_package_data=True,  # 自动包含 package_data 中指定的文件
     url='https://github.com/cndaqiang/WZRY',
     install_requires=[
-        'airtest-mobileauto>=2.1.2',
+        'airtest-mobileauto>=2.1.3',
     ],
     entry_points={
         'console_scripts': [
-            'autowzyd=AutoWZRY.wzyd:main',  # 直接引用脚本文件
-            'autowzry=AutoWZRY.wzry:main',  # 直接引用脚本文件
-            'autotiyanfu=AutoWZRY.tiyanfu:main',  # 直接引用脚本文件
+            'autowzyd=autowzry.wzyd:main',  # 直接引用脚本文件
+            'autowzry=autowzry.wzry:main',  # 直接引用脚本文件
+            'autotiyanfu=autowzry.tiyanfu:main',  # 直接引用脚本文件
         ],
     },
     classifiers=[
